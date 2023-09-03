@@ -1,0 +1,701 @@
+body {
+  background-color: white;
+}
+
+.navbar {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.navbar-brand {
+  margin: 0;
+}
+.navbar-brand img {
+  width: 50%;
+}
+.bg-lightt {
+  background-color: white;
+}
+
+.btn {
+  color: black;
+  border-color: black;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  font-size: 25px;
+  font-family: Snell Roundhand, cursive;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.main-hero img {
+  width: 60%;
+  height: 50%;
+}
+
+.main-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.main-hero-right {
+  width: 50%;
+  font-size: 20px;
+}
+
+#btnForOpen {
+  font-size: 18px;
+  background-color: white;
+  border-radius: 5px;
+  border: 0.5px solid;
+  width: 130px;
+  height: 45px;
+  display: none;
+}
+
+#btnForOpen:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.shop {
+  width: 100%;
+}
+
+.shop_icon {
+  width: 3%;
+  height: 30%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.page-link {
+  border: 0.5px solid black;
+  background-color: white;
+  color: black;
+}
+
+.page-link:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+#sectionCars {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #c9c9c9; */
+  background-image: url(https://autoreview.ru/images/gallery/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/2023/April/07/digest-mercedes-e-class.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  border-radius: 3rem;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.title-partner {
+  font-size: 50px;
+  font-weight: 500;
+  margin-left: 120px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+.partner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.partner img {
+  width: 7%;
+  height: 7%;
+}
+
+.main-modal {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+.inner-modal {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  background-color: #ffffff;
+  margin: 10% 35%;
+  text-align: center;
+}
+
+.inner-modal h3 {
+  margin-bottom: 15px;
+}
+
+.inp-edit-name {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inp-edit-job {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.inp-edit-img {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-save {
+  width: 10%;
+  height: 12%;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  background-color: rgb(0, 0, 255);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-save:active {
+  background-color: rgb(9, 9, 205);
+}
+
+.close {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalImg {
+  width: 90px;
+  height: 70px;
+  margin-left: 10px;
+}
+.btn-closer {
+  background-color: white;
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+
+.btn-closer:hover {
+  background-color: black;
+  color: white;
+}
+.inner-modal input {
+  width: auto;
+  border-radius: 5px;
+  border: 0.5px black solid;
+  margin: 7px;
+  text-align: center;
+}
+
+#modalForm3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#modalForm3 input {
+  width: auto;
+  border-radius: 5px;
+  border: 0.5px black solid;
+  margin: 7px;
+  text-align: center;
+}
+
+#modalForm3 button {
+  height: 30%;
+}
+
+#addBtn {
+  width: 60px;
+  height: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  border: 0.5px solid;
+}
+#addBtn:hover {
+  background-color: black;
+  color: white;
+}
+.main-modal2 {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+.modalImg2 {
+  width: 20%;
+}
+
+.inner-modal2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 50%;
+  background-color: #ffffff;
+  margin: 10% 35%;
+  text-align: center;
+}
+
+.inp-edit-name {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inp-edit-job {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.inp-edit-img {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-save {
+  width: 10%;
+  height: 12%;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  background-color: rgb(0, 0, 255);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-save:active {
+  background-color: rgb(9, 9, 205);
+}
+
+.close {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-secondary {
+  background-color: white !important;
+}
+
+.btn-secondary:hover {
+  background-color: black !important;
+}
+
+.modalImg2 {
+  width: 20%;
+}
+
+.close2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-closer2 {
+  height: 40%;
+  margin-top: 10px;
+  margin-right: 5px;
+  background-color: rgb(59, 57, 57);
+  color: white;
+  border: 0;
+}
+
+.btn-closer2:active {
+  background-color: black;
+}
+
+.btn-save2 {
+  width: 15%;
+  height: 12%;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  background-color: rgb(65, 63, 63);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-save2:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.main-modal3 {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+.inner-modal3 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 40%;
+  background-color: #ffffff;
+  margin: 10% 35%;
+  text-align: center;
+}
+
+.close3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalImg3 {
+  width: 20%;
+}
+
+.btn-closer3 {
+  height: 40%;
+  margin-top: 10px;
+  margin-right: 5px;
+  background-color: rgb(59, 57, 57);
+  color: white;
+  border: 0;
+}
+
+.btn-closer3:active {
+  background-color: black;
+}
+
+.btn-save3 {
+  width: 15%;
+  height: 12%;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  background-color: rgb(65, 63, 63);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-save3:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.inpSignLog {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inpSignPass {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.inpSignConfirm {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#logOut {
+  display: none;
+}
+
+.btnDelete:hover,
+.btnEdit:hover {
+  background-color: black !important;
+  color: white !important;
+  border-color: #dc3545;
+}
+
+@media (max-width: 990px) and (min-width: 765px) {
+  .main-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-hero-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 764px) {
+  .main-hero-right {
+    width: 100%;
+    height: 50%;
+    font-size: 15px;
+  }
+  .main-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner-modal {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar-brand {
+    margin: 0;
+    width: 180px;
+  }
+}
+
+.descr-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-modalSp {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+.inner-modalSp {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  background-color: #ffffff;
+  margin: 10% auto;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0;
+}
+
+#inpSpEmail {
+  width: 50%;
+  height: 10%;
+  margin: 2% auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inpSpName {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inpSpPhone {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-saveSp {
+  width: 10%;
+  height: 12%;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-saveSp:active {
+  background-color: rgb(9, 9, 205);
+}
+
+.closeSp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-closerSp {
+  height: 28%;
+  margin-left: 350px;
+  margin-bottom: 40px;
+  background-color: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.modalFormSp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modalImgSp {
+  width: 90px;
+  height: 70px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.btnBuy {
+  width: 36%;
+  height: 30%;
+  margin-top: 5px;
+}
